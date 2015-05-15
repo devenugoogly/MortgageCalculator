@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F011C231AFF0B640050D189 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F011C221AFF0B640050D189 /* DataManager.m */; };
+		3F011C251AFF15070050D189 /* mortgagedb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3F011C241AFF15070050D189 /* mortgagedb.sql */; };
+		3F011C2D1AFF4B580050D189 /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F011C2C1AFF4B580050D189 /* InfoWindow.xib */; };
+		3F011C301AFF4C910050D189 /* CustomInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F011C2F1AFF4C910050D189 /* CustomInfoWindow.m */; };
+		3F011C321AFF5D5A0050D189 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F011C311AFF5D5A0050D189 /* bubble.png */; };
+		3F011C381AFF678D0050D189 /* MortgagePopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F011C371AFF678D0050D189 /* MortgagePopoverViewController.m */; };
+		3F011C3E1AFF6FD10050D189 /* StreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F011C3D1AFF6FD10050D189 /* StreetViewController.m */; };
+		3F42FF311B0053070018F21F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F42FF2D1B0053070018F21F /* background.jpg */; };
+		3F42FF321B0053070018F21F /* grey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F42FF2E1B0053070018F21F /* grey.jpg */; };
+		3F42FF331B0053070018F21F /* iphone image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F42FF2F1B0053070018F21F /* iphone image.png */; };
+		3F42FF341B0053070018F21F /* real estate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F42FF301B0053070018F21F /* real estate.jpg */; };
+		3F4335721AFC150000569C4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4335711AFC150000569C4A /* main.m */; };
+		3F4335751AFC150000569C4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4335741AFC150000569C4A /* AppDelegate.m */; };
+		3F4335781AFC150000569C4A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4335771AFC150000569C4A /* FirstViewController.m */; };
+		3F43357B1AFC150000569C4A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F43357A1AFC150000569C4A /* SecondViewController.m */; };
+		3F4335801AFC150000569C4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F43357F1AFC150000569C4A /* Images.xcassets */; };
+		3F4335831AFC150000569C4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F4335811AFC150000569C4A /* LaunchScreen.xib */; };
+		3F43358F1AFC150000569C4A /* MortgageCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F43358E1AFC150000569C4A /* MortgageCalculatorTests.m */; };
+		3F43359A1AFC188A00569C4A /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F4335981AFC188A00569C4A /* GoogleMaps.bundle */; };
+		3F43359B1AFC188A00569C4A /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335991AFC188A00569C4A /* GoogleMaps.framework */; };
+		3F4335A81AFC195000569C4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F43359C1AFC195000569C4A /* AVFoundation.framework */; };
+		3F4335A91AFC195000569C4A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F43359D1AFC195000569C4A /* CoreData.framework */; };
+		3F4335AA1AFC195000569C4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F43359E1AFC195000569C4A /* CoreLocation.framework */; };
+		3F4335AB1AFC195000569C4A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F43359F1AFC195000569C4A /* CoreText.framework */; };
+		3F4335AC1AFC195000569C4A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A01AFC195000569C4A /* GLKit.framework */; };
+		3F4335AD1AFC195000569C4A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A11AFC195000569C4A /* ImageIO.framework */; };
+		3F4335AE1AFC195000569C4A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A21AFC195000569C4A /* libc++.dylib */; };
+		3F4335AF1AFC195000569C4A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A31AFC195000569C4A /* libicucore.dylib */; };
+		3F4335B01AFC195000569C4A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A41AFC195000569C4A /* libz.dylib */; };
+		3F4335B11AFC195000569C4A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A51AFC195000569C4A /* OpenGLES.framework */; };
+		3F4335B21AFC195000569C4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A61AFC195000569C4A /* QuartzCore.framework */; };
+		3F4335B31AFC195000569C4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4335A71AFC195000569C4A /* SystemConfiguration.framework */; };
+		3F68207F1AFDBF9100EC2AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F68207E1AFDBF9100EC2AAA /* Main.storyboard */; };
+		3F6820861AFDC06400EC2AAA /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6820851AFDC06400EC2AAA /* DBManager.m */; };
+		3F68208A1AFDC14C00EC2AAA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6820891AFDC14C00EC2AAA /* libsqlite3.dylib */; };
+		3F68208F1AFDC49A00EC2AAA /* calc.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F68208D1AFDC49A00EC2AAA /* calc.png */; };
+		3F6820901AFDC49A00EC2AAA /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F68208E1AFDC49A00EC2AAA /* map.png */; };
+		3F6820A51AFDCA3100EC2AAA /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6820931AFDCA3100EC2AAA /* AFHTTPRequestOperation.m */; };
+		3F6820A61AFDCA3100EC2AAA /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6820951AFDCA3100EC2AAA /* AFHTTPRequestOperationManager.m */; };
+		3F6820A71AFDCA3100EC2AAA /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6820971AFDCA3100EC2AAA /* AFHTTPSessionManager.m */; };
+		3F6820A81AFDCA3100EC2AAA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68209A1AFDCA3100EC2AAA /* AFNetworkReachabilityManager.m */; };
+		3F6820A91AFDCA3100EC2AAA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68209C1AFDCA3100EC2AAA /* AFSecurityPolicy.m */; };
+		3F6820AA1AFDCA3100EC2AAA /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68209E1AFDCA3100EC2AAA /* AFURLConnectionOperation.m */; };
+		3F6820AB1AFDCA3100EC2AAA /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6820A01AFDCA3100EC2AAA /* AFURLRequestSerialization.m */; };
+		3F6820AC1AFDCA3100EC2AAA /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6820A21AFDCA3100EC2AAA /* AFURLResponseSerialization.m */; };
+		3F6820AD1AFDCA3100EC2AAA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6820A41AFDCA3100EC2AAA /* AFURLSessionManager.m */; };
+		BADE30541B0043E600AE1306 /* MortgageAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE30531B0043E600AE1306 /* MortgageAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F4335891AFC150000569C4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F4335641AFC150000569C4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F43356B1AFC150000569C4A;
+			remoteInfo = MortgageCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F011C221AFF0B640050D189 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		3F011C241AFF15070050D189 /* mortgagedb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = mortgagedb.sql; sourceTree = "<group>"; };
+		3F011C261AFF3D4B0050D189 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = MortgageCalculator/DataManager.h; sourceTree = "<group>"; };
+		3F011C2C1AFF4B580050D189 /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoWindow.xib; path = ../InfoWindow.xib; sourceTree = "<group>"; };
+		3F011C2E1AFF4C910050D189 /* CustomInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomInfoWindow.h; path = MortgageCalculator/CustomInfoWindow.h; sourceTree = "<group>"; };
+		3F011C2F1AFF4C910050D189 /* CustomInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomInfoWindow.m; path = MortgageCalculator/CustomInfoWindow.m; sourceTree = "<group>"; };
+		3F011C311AFF5D5A0050D189 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		3F011C361AFF678D0050D189 /* MortgagePopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MortgagePopoverViewController.h; sourceTree = "<group>"; };
+		3F011C371AFF678D0050D189 /* MortgagePopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MortgagePopoverViewController.m; sourceTree = "<group>"; };
+		3F011C3C1AFF6FD10050D189 /* StreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetViewController.h; sourceTree = "<group>"; };
+		3F011C3D1AFF6FD10050D189 /* StreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetViewController.m; sourceTree = "<group>"; };
+		3F42FF2D1B0053070018F21F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		3F42FF2E1B0053070018F21F /* grey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grey.jpg; sourceTree = "<group>"; };
+		3F42FF2F1B0053070018F21F /* iphone image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone image.png"; sourceTree = "<group>"; };
+		3F42FF301B0053070018F21F /* real estate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "real estate.jpg"; sourceTree = "<group>"; };
+		3F43356C1AFC150000569C4A /* MortgageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4335701AFC150000569C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4335711AFC150000569C4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F4335731AFC150000569C4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F4335741AFC150000569C4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F4335761AFC150000569C4A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		3F4335771AFC150000569C4A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		3F4335791AFC150000569C4A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		3F43357A1AFC150000569C4A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		3F43357F1AFC150000569C4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F4335821AFC150000569C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F4335881AFC150000569C4A /* MortgageCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortgageCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F43358D1AFC150000569C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F43358E1AFC150000569C4A /* MortgageCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MortgageCalculatorTests.m; sourceTree = "<group>"; };
+		3F4335981AFC188A00569C4A /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		3F4335991AFC188A00569C4A /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		3F43359C1AFC195000569C4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3F43359D1AFC195000569C4A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3F43359E1AFC195000569C4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3F43359F1AFC195000569C4A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3F4335A01AFC195000569C4A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3F4335A11AFC195000569C4A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3F4335A21AFC195000569C4A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3F4335A31AFC195000569C4A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		3F4335A41AFC195000569C4A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3F4335A51AFC195000569C4A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3F4335A61AFC195000569C4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3F4335A71AFC195000569C4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3F68207E1AFDBF9100EC2AAA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F6820841AFDC06400EC2AAA /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		3F6820851AFDC06400EC2AAA /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		3F6820891AFDC14C00EC2AAA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3F68208D1AFDC49A00EC2AAA /* calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calc.png; sourceTree = "<group>"; };
+		3F68208E1AFDC49A00EC2AAA /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		3F6820921AFDCA3100EC2AAA /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		3F6820931AFDCA3100EC2AAA /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		3F6820941AFDCA3100EC2AAA /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		3F6820951AFDCA3100EC2AAA /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		3F6820961AFDCA3100EC2AAA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		3F6820971AFDCA3100EC2AAA /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		3F6820981AFDCA3100EC2AAA /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		3F6820991AFDCA3100EC2AAA /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		3F68209A1AFDCA3100EC2AAA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		3F68209B1AFDCA3100EC2AAA /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		3F68209C1AFDCA3100EC2AAA /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		3F68209D1AFDCA3100EC2AAA /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		3F68209E1AFDCA3100EC2AAA /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		3F68209F1AFDCA3100EC2AAA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		3F6820A01AFDCA3100EC2AAA /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		3F6820A11AFDCA3100EC2AAA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		3F6820A21AFDCA3100EC2AAA /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		3F6820A31AFDCA3100EC2AAA /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		3F6820A41AFDCA3100EC2AAA /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		BADE30521B0043E600AE1306 /* MortgageAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MortgageAnnotation.h; sourceTree = "<group>"; };
+		BADE30531B0043E600AE1306 /* MortgageAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MortgageAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F4335691AFC150000569C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F68208A1AFDC14C00EC2AAA /* libsqlite3.dylib in Frameworks */,
+				3F4335A81AFC195000569C4A /* AVFoundation.framework in Frameworks */,
+				3F4335A91AFC195000569C4A /* CoreData.framework in Frameworks */,
+				3F4335AA1AFC195000569C4A /* CoreLocation.framework in Frameworks */,
+				3F4335AB1AFC195000569C4A /* CoreText.framework in Frameworks */,
+				3F4335AC1AFC195000569C4A /* GLKit.framework in Frameworks */,
+				3F4335AD1AFC195000569C4A /* ImageIO.framework in Frameworks */,
+				3F4335AE1AFC195000569C4A /* libc++.dylib in Frameworks */,
+				3F4335AF1AFC195000569C4A /* libicucore.dylib in Frameworks */,
+				3F4335B01AFC195000569C4A /* libz.dylib in Frameworks */,
+				3F4335B11AFC195000569C4A /* OpenGLES.framework in Frameworks */,
+				3F4335B21AFC195000569C4A /* QuartzCore.framework in Frameworks */,
+				3F4335B31AFC195000569C4A /* SystemConfiguration.framework in Frameworks */,
+				3F43359B1AFC188A00569C4A /* GoogleMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4335851AFC150000569C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F42FF351B0053280018F21F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3F42FF2D1B0053070018F21F /* background.jpg */,
+				3F42FF2E1B0053070018F21F /* grey.jpg */,
+				3F42FF2F1B0053070018F21F /* iphone image.png */,
+				3F42FF301B0053070018F21F /* real estate.jpg */,
+				3F011C311AFF5D5A0050D189 /* bubble.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		3F4335631AFC14FF00569C4A = {
+			isa = PBXGroup;
+			children = (
+				3F42FF351B0053280018F21F /* images */,
+				3F011C2E1AFF4C910050D189 /* CustomInfoWindow.h */,
+				3F011C2F1AFF4C910050D189 /* CustomInfoWindow.m */,
+				3F011C261AFF3D4B0050D189 /* DataManager.h */,
+				3F011C241AFF15070050D189 /* mortgagedb.sql */,
+				3F6820891AFDC14C00EC2AAA /* libsqlite3.dylib */,
+				3F43356E1AFC150000569C4A /* MortgageCalculator */,
+				3F43358B1AFC150000569C4A /* MortgageCalculatorTests */,
+				3F43356D1AFC150000569C4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F43356D1AFC150000569C4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F43356C1AFC150000569C4A /* MortgageCalculator.app */,
+				3F4335881AFC150000569C4A /* MortgageCalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F43356E1AFC150000569C4A /* MortgageCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				3F011C3C1AFF6FD10050D189 /* StreetViewController.h */,
+				3F011C3D1AFF6FD10050D189 /* StreetViewController.m */,
+				3F011C361AFF678D0050D189 /* MortgagePopoverViewController.h */,
+				3F011C371AFF678D0050D189 /* MortgagePopoverViewController.m */,
+				3F011C2C1AFF4B580050D189 /* InfoWindow.xib */,
+				3F011C221AFF0B640050D189 /* DataManager.m */,
+				BADE30521B0043E600AE1306 /* MortgageAnnotation.h */,
+				BADE30531B0043E600AE1306 /* MortgageAnnotation.m */,
+				3F4335731AFC150000569C4A /* AppDelegate.h */,
+				3F4335741AFC150000569C4A /* AppDelegate.m */,
+				3F4335761AFC150000569C4A /* FirstViewController.h */,
+				3F4335771AFC150000569C4A /* FirstViewController.m */,
+				3F4335791AFC150000569C4A /* SecondViewController.h */,
+				3F6820841AFDC06400EC2AAA /* DBManager.h */,
+				3F6820851AFDC06400EC2AAA /* DBManager.m */,
+				3F43357A1AFC150000569C4A /* SecondViewController.m */,
+				3F68207E1AFDBF9100EC2AAA /* Main.storyboard */,
+				3F43357F1AFC150000569C4A /* Images.xcassets */,
+				3F4335811AFC150000569C4A /* LaunchScreen.xib */,
+				3F43356F1AFC150000569C4A /* Supporting Files */,
+			);
+			path = MortgageCalculator;
+			sourceTree = "<group>";
+		};
+		3F43356F1AFC150000569C4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F6820911AFDCA3100EC2AAA /* AFNetworking */,
+				3F68208D1AFDC49A00EC2AAA /* calc.png */,
+				3F68208E1AFDC49A00EC2AAA /* map.png */,
+				3F43359C1AFC195000569C4A /* AVFoundation.framework */,
+				3F43359D1AFC195000569C4A /* CoreData.framework */,
+				3F43359E1AFC195000569C4A /* CoreLocation.framework */,
+				3F43359F1AFC195000569C4A /* CoreText.framework */,
+				3F4335A01AFC195000569C4A /* GLKit.framework */,
+				3F4335A11AFC195000569C4A /* ImageIO.framework */,
+				3F4335A21AFC195000569C4A /* libc++.dylib */,
+				3F4335A31AFC195000569C4A /* libicucore.dylib */,
+				3F4335A41AFC195000569C4A /* libz.dylib */,
+				3F4335A51AFC195000569C4A /* OpenGLES.framework */,
+				3F4335A61AFC195000569C4A /* QuartzCore.framework */,
+				3F4335A71AFC195000569C4A /* SystemConfiguration.framework */,
+				3F4335981AFC188A00569C4A /* GoogleMaps.bundle */,
+				3F4335991AFC188A00569C4A /* GoogleMaps.framework */,
+				3F4335701AFC150000569C4A /* Info.plist */,
+				3F4335711AFC150000569C4A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F43358B1AFC150000569C4A /* MortgageCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F43358E1AFC150000569C4A /* MortgageCalculatorTests.m */,
+				3F43358C1AFC150000569C4A /* Supporting Files */,
+			);
+			path = MortgageCalculatorTests;
+			sourceTree = "<group>";
+		};
+		3F43358C1AFC150000569C4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F43358D1AFC150000569C4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F6820911AFDCA3100EC2AAA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3F6820921AFDCA3100EC2AAA /* AFHTTPRequestOperation.h */,
+				3F6820931AFDCA3100EC2AAA /* AFHTTPRequestOperation.m */,
+				3F6820941AFDCA3100EC2AAA /* AFHTTPRequestOperationManager.h */,
+				3F6820951AFDCA3100EC2AAA /* AFHTTPRequestOperationManager.m */,
+				3F6820961AFDCA3100EC2AAA /* AFHTTPSessionManager.h */,
+				3F6820971AFDCA3100EC2AAA /* AFHTTPSessionManager.m */,
+				3F6820981AFDCA3100EC2AAA /* AFNetworking.h */,
+				3F6820991AFDCA3100EC2AAA /* AFNetworkReachabilityManager.h */,
+				3F68209A1AFDCA3100EC2AAA /* AFNetworkReachabilityManager.m */,
+				3F68209B1AFDCA3100EC2AAA /* AFSecurityPolicy.h */,
+				3F68209C1AFDCA3100EC2AAA /* AFSecurityPolicy.m */,
+				3F68209D1AFDCA3100EC2AAA /* AFURLConnectionOperation.h */,
+				3F68209E1AFDCA3100EC2AAA /* AFURLConnectionOperation.m */,
+				3F68209F1AFDCA3100EC2AAA /* AFURLRequestSerialization.h */,
+				3F6820A01AFDCA3100EC2AAA /* AFURLRequestSerialization.m */,
+				3F6820A11AFDCA3100EC2AAA /* AFURLResponseSerialization.h */,
+				3F6820A21AFDCA3100EC2AAA /* AFURLResponseSerialization.m */,
+				3F6820A31AFDCA3100EC2AAA /* AFURLSessionManager.h */,
+				3F6820A41AFDCA3100EC2AAA /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F43356B1AFC150000569C4A /* MortgageCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4335921AFC150000569C4A /* Build configuration list for PBXNativeTarget "MortgageCalculator" */;
+			buildPhases = (
+				3F4335681AFC150000569C4A /* Sources */,
+				3F4335691AFC150000569C4A /* Frameworks */,
+				3F43356A1AFC150000569C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MortgageCalculator;
+			productName = MortgageCalculator;
+			productReference = 3F43356C1AFC150000569C4A /* MortgageCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F4335871AFC150000569C4A /* MortgageCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4335951AFC150000569C4A /* Build configuration list for PBXNativeTarget "MortgageCalculatorTests" */;
+			buildPhases = (
+				3F4335841AFC150000569C4A /* Sources */,
+				3F4335851AFC150000569C4A /* Frameworks */,
+				3F4335861AFC150000569C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F43358A1AFC150000569C4A /* PBXTargetDependency */,
+			);
+			name = MortgageCalculatorTests;
+			productName = MortgageCalculatorTests;
+			productReference = 3F4335881AFC150000569C4A /* MortgageCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F4335641AFC150000569C4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = sjsu;
+				TargetAttributes = {
+					3F43356B1AFC150000569C4A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					3F4335871AFC150000569C4A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 3F43356B1AFC150000569C4A;
+					};
+				};
+			};
+			buildConfigurationList = 3F4335671AFC150000569C4A /* Build configuration list for PBXProject "MortgageCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F4335631AFC14FF00569C4A;
+			productRefGroup = 3F43356D1AFC150000569C4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F43356B1AFC150000569C4A /* MortgageCalculator */,
+				3F4335871AFC150000569C4A /* MortgageCalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F43356A1AFC150000569C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F011C251AFF15070050D189 /* mortgagedb.sql in Resources */,
+				3F42FF341B0053070018F21F /* real estate.jpg in Resources */,
+				3F42FF331B0053070018F21F /* iphone image.png in Resources */,
+				3F42FF311B0053070018F21F /* background.jpg in Resources */,
+				3F4335831AFC150000569C4A /* LaunchScreen.xib in Resources */,
+				3F011C321AFF5D5A0050D189 /* bubble.png in Resources */,
+				3F42FF321B0053070018F21F /* grey.jpg in Resources */,
+				3F68208F1AFDC49A00EC2AAA /* calc.png in Resources */,
+				3F011C2D1AFF4B580050D189 /* InfoWindow.xib in Resources */,
+				3F68207F1AFDBF9100EC2AAA /* Main.storyboard in Resources */,
+				3F6820901AFDC49A00EC2AAA /* map.png in Resources */,
+				3F4335801AFC150000569C4A /* Images.xcassets in Resources */,
+				3F43359A1AFC188A00569C4A /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4335861AFC150000569C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F4335681AFC150000569C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F011C381AFF678D0050D189 /* MortgagePopoverViewController.m in Sources */,
+				3F6820AA1AFDCA3100EC2AAA /* AFURLConnectionOperation.m in Sources */,
+				3F011C231AFF0B640050D189 /* DataManager.m in Sources */,
+				BADE30541B0043E600AE1306 /* MortgageAnnotation.m in Sources */,
+				3F6820A51AFDCA3100EC2AAA /* AFHTTPRequestOperation.m in Sources */,
+				3F6820A81AFDCA3100EC2AAA /* AFNetworkReachabilityManager.m in Sources */,
+				3F6820AD1AFDCA3100EC2AAA /* AFURLSessionManager.m in Sources */,
+				3F6820AB1AFDCA3100EC2AAA /* AFURLRequestSerialization.m in Sources */,
+				3F43357B1AFC150000569C4A /* SecondViewController.m in Sources */,
+				3F6820AC1AFDCA3100EC2AAA /* AFURLResponseSerialization.m in Sources */,
+				3F4335751AFC150000569C4A /* AppDelegate.m in Sources */,
+				3F4335781AFC150000569C4A /* FirstViewController.m in Sources */,
+				3F011C301AFF4C910050D189 /* CustomInfoWindow.m in Sources */,
+				3F6820A61AFDCA3100EC2AAA /* AFHTTPRequestOperationManager.m in Sources */,
+				3F6820A91AFDCA3100EC2AAA /* AFSecurityPolicy.m in Sources */,
+				3F4335721AFC150000569C4A /* main.m in Sources */,
+				3F6820861AFDC06400EC2AAA /* DBManager.m in Sources */,
+				3F011C3E1AFF6FD10050D189 /* StreetViewController.m in Sources */,
+				3F6820A71AFDCA3100EC2AAA /* AFHTTPSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4335841AFC150000569C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F43358F1AFC150000569C4A /* MortgageCalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F43358A1AFC150000569C4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F43356B1AFC150000569C4A /* MortgageCalculator */;
+			targetProxy = 3F4335891AFC150000569C4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F4335811AFC150000569C4A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F4335821AFC150000569C4A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F4335901AFC150000569C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F4335911AFC150000569C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F4335931AFC150000569C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MortgageCalculator",
+				);
+				INFOPLIST_FILE = MortgageCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MortgageCalculator",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F4335941AFC150000569C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MortgageCalculator",
+				);
+				INFOPLIST_FILE = MortgageCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MortgageCalculator",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F4335961AFC150000569C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MortgageCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MortgageCalculator.app/MortgageCalculator";
+			};
+			name = Debug;
+		};
+		3F4335971AFC150000569C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MortgageCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MortgageCalculator.app/MortgageCalculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F4335671AFC150000569C4A /* Build configuration list for PBXProject "MortgageCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4335901AFC150000569C4A /* Debug */,
+				3F4335911AFC150000569C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4335921AFC150000569C4A /* Build configuration list for PBXNativeTarget "MortgageCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4335931AFC150000569C4A /* Debug */,
+				3F4335941AFC150000569C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4335951AFC150000569C4A /* Build configuration list for PBXNativeTarget "MortgageCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4335961AFC150000569C4A /* Debug */,
+				3F4335971AFC150000569C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F4335641AFC150000569C4A /* Project object */;
+}
